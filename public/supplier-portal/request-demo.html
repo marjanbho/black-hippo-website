@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Demo - Supplier Portal</title>
+  <meta name="description" content="Book a personalized demo of Supplier Portal and see how it helps home & decoration wholesalers make confident assortment decisions.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="./assets/main-w_aQhyyG.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-Dx3avjaj.css">
+</head>
+<body class="bg-white text-darkslate antialiased selection:bg-accent/20 selection:text-darkslate">
+
+  <!-- Header -->
+  <header class="bg-white border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <a href="./" class="text-lg font-bold text-darkslate tracking-tight flex items-center gap-2">
+          <div class="w-8 h-8 bg-accent/10 rounded-lg flex items-center justify-center text-accent">
+            <i class="fa-solid fa-layer-group text-sm"></i>
+          </div>
+          Supplier Portal
+        </a>
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="./how-it-works.html" class="text-slate-600 hover:text-slate-800 transition-colors">How It Works</a>
+          <a href="./industry.html" class="text-slate-600 hover:text-slate-800 transition-colors">Industry</a>
+          <a href="./about.html" class="text-slate-600 hover:text-slate-800 transition-colors">About</a>
+          <a href="./request-demo.html" class="bg-accent text-white px-4 py-2 rounded-md hover:bg-accent/90 transition-colors">Request Demo</a>
+        </nav>
+        <button id="mobile-menu-btn" class="md:hidden text-slate-600"><i class="fa-solid fa-bars"></i></button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-100 pt-4">
+        <div class="flex flex-col space-y-4">
+          <a href="./how-it-works.html" class="text-slate-600 hover:text-slate-800 transition-colors">How It Works</a>
+          <a href="./industry.html" class="text-slate-600 hover:text-slate-800 transition-colors">Industry</a>
+          <a href="./about.html" class="text-slate-600 hover:text-slate-800 transition-colors">About</a>
+          <a href="./request-demo.html" class="bg-accent text-white px-4 py-2 rounded-md hover:bg-accent/90 transition-colors w-fit">Request Demo</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="demo-booking-form" class="py-16 min-h-[700px]">
+      <div class="max-w-4xl mx-auto px-6">
+
+        <!-- Step 1: Schedule -->
+        <div id="step1-schedule" class="step-content">
+          <div class="text-center mb-10">
+            <h1 class="text-3xl font-bold text-darkslate mb-2">Schedule your demo</h1>
+            <p class="text-accent">Choose a time that works for you</p>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-8">
+            <!-- Left Column - Calendar -->
+            <div class="bg-offwhite rounded-xl p-6">
+              <h3 class="text-lg font-bold text-darkslate mb-4">Select Date</h3>
+              <div id="calendar-widget" class="bg-white rounded-lg p-4">
+                <div class="flex items-center justify-between mb-4">
+                  <button id="prev-month" class="text-darkslate/60 hover:text-darkslate transition-colors p-1">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </button>
+                  <h4 id="current-month" class="font-semibold text-darkslate"></h4>
+                  <button id="next-month" class="text-darkslate/60 hover:text-darkslate transition-colors p-1">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </div>
+                <div class="grid grid-cols-7 gap-1 mb-2">
+                  <div class="text-center text-xs font-medium text-darkslate/60 py-1">Sun</div>
+                  <div class="text-center text-xs font-medium text-darkslate/60 py-1">Mon</div>
+                  <div class="text-center text-xs font-medium text-darkslate/60 py-1">Tue</div>
+                  <div class="text-center text-xs font-medium text-darkslate/60 py-1">Wed</div>
+                  <div class="text-center text-xs font-medium text-darkslate/60 py-1">Thu</div>
+                  <div class="text-center text-xs font-medium text-darkslate/60 py-1">Fri</div>
+                  <div class="text-center text-xs font-medium text-darkslate/60 py-1">Sat</div>
+                </div>
+                <div id="calendar-days" class="grid grid-cols-7 gap-1">
+                  <!-- JS will populate this -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="space-y-6">
+              <!-- Available Times -->
+              <div>
+                <h3 class="text-lg font-bold text-darkslate mb-4">Available Times</h3>
+                <div class="grid grid-cols-2 gap-3">
+                  <button class="time-slot p-3 border border-gray-300 rounded-md text-center hover:border-accent hover:bg-accent hover:text-white transition-colors">9:00 AM</button>
+                  <button class="time-slot p-3 border border-gray-300 rounded-md text-center hover:border-accent hover:bg-accent hover:text-white transition-colors">10:00 AM</button>
+                  <button class="time-slot p-3 border border-gray-300 rounded-md text-center hover:border-accent hover:bg-accent hover:text-white transition-colors">11:00 AM</button>
+                  <button class="time-slot p-3 border border-gray-300 rounded-md text-center hover:border-accent hover:bg-accent hover:text-white transition-colors">2:00 PM</button>
+                  <button class="time-slot p-3 border border-gray-300 rounded-md text-center hover:border-accent hover:bg-accent hover:text-white transition-colors">3:00 PM</button>
+                  <button class="time-slot p-3 border border-gray-300 rounded-md text-center hover:border-accent hover:bg-accent hover:text-white transition-colors">4:00 PM</button>
+                </div>
+              </div>
+
+              <!-- Timezone -->
+              <div>
+                <label class="block text-sm font-medium text-darkslate mb-2">Timezone</label>
+                <select id="timezone" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-accent focus:border-accent">
+                  <option value="UTC">UTC (GMT+0)</option>
+                  <option value="CET" selected>CET (GMT+1)</option>
+                  <option value="EST">EST (GMT-5)</option>
+                  <option value="PST">PST (GMT-8)</option>
+                </select>
+              </div>
+
+              <!-- Meeting Format -->
+              <div>
+                <label class="block text-sm font-medium text-darkslate mb-2">Meeting Format</label>
+                <div class="space-y-3">
+                  <label class="flex items-center gap-3 cursor-pointer">
+                    <input type="radio" name="meeting-format" value="video" checked class="text-accent accent-accent">
+                    <span class="text-darkslate/60">Video Call (Microsoft Teams)</span>
+                  </label>
+                  <label class="flex items-center gap-3 cursor-pointer">
+                    <input type="radio" name="meeting-format" value="phone" class="text-accent accent-accent">
+                    <span class="text-darkslate/60">Phone Call</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Nav -->
+          <div class="flex justify-end mt-10">
+            <button id="step1-next" disabled class="bg-accent text-white px-8 py-3 rounded-md hover:bg-accent/90 transition-colors font-medium disabled:opacity-50 disabled:cursor-not-allowed">
+              Continue <i class="fa-solid fa-arrow-right ml-2"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 2: Company Info -->
+        <div id="step2-company" class="step-content hidden">
+          <div class="text-center mb-10">
+            <h1 class="text-3xl font-bold text-darkslate mb-2">Tell us about your company</h1>
+            <p class="text-accent">Help us prepare a tailored demo</p>
+          </div>
+
+          <form class="max-w-2xl mx-auto space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-medium text-darkslate mb-2">First Name *</label>
+                <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-accent focus:border-accent transition-colors" placeholder="First name">
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-darkslate mb-2">Last Name *</label>
+                <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-accent focus:border-accent transition-colors" placeholder="Last name">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-darkslate mb-2">Business Email *</label>
+              <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-accent focus:border-accent transition-colors" placeholder="you@company.com">
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-darkslate mb-2">Phone Number</label>
+              <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-accent focus:border-accent transition-colors" placeholder="+31 6 1234 5678">
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-darkslate mb-2">Company Name *</label>
+              <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-accent focus:border-accent transition-colors" placeholder="Your company name">
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-darkslate mb-2">Job Title *</label>
+              <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-accent focus:border-accent transition-colors" placeholder="Your job title">
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-darkslate mb-2">How can we help you?</label>
+              <textarea rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-accent focus:border-accent transition-colors" placeholder="Tell us about your current challenges or what you'd like to see in the demo..."></textarea>
+            </div>
+          </form>
+
+          <!-- Bottom Nav -->
+          <div class="flex justify-between items-center mt-10 max-w-2xl mx-auto">
+            <button id="step2-back" class="text-darkslate/60 hover:text-darkslate transition-colors font-medium">
+              <i class="fa-solid fa-arrow-left mr-2"></i> Back
+            </button>
+            <button id="step2-next" class="bg-accent text-white px-8 py-3 rounded-md hover:bg-accent/90 transition-colors font-medium">
+              Confirm Booking <i class="fa-solid fa-check ml-2"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 3: Confirmation -->
+        <div id="step3-confirmation" class="step-content hidden">
+          <div class="text-center mb-10">
+            <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i class="fa-solid fa-check text-accent text-2xl"></i>
+            </div>
+            <h1 class="text-3xl font-bold text-darkslate mb-2">Your demo is confirmed</h1>
+            <p class="text-darkslate/60">We've saved your details and scheduled a demo with Sarah Johnson</p>
+          </div>
+
+          <!-- Meeting Details -->
+          <div class="bg-offwhite rounded-xl p-6 max-w-2xl mx-auto mb-8">
+            <h3 class="text-lg font-bold text-darkslate mb-4">Meeting Details</h3>
+            <div class="space-y-4">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-calendar text-accent w-5"></i>
+                <span id="selected-date" class="text-darkslate/60"></span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-clock text-accent w-5"></i>
+                <span id="selected-time" class="text-darkslate/60"></span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-video text-accent w-5"></i>
+                <span id="selected-format" class="text-darkslate/60"></span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-user text-accent w-5"></i>
+                <span class="text-darkslate/60">Sarah Johnson / Senior Solutions Consultant</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- What happens next -->
+          <div class="max-w-2xl mx-auto mb-8">
+            <h3 class="text-lg font-bold text-darkslate mb-4">What happens next?</h3>
+            <div class="space-y-4">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-envelope text-accent w-5"></i>
+                <span class="text-darkslate/60">You'll receive a calendar invitation with meeting details</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-clipboard-list text-accent w-5"></i>
+                <span class="text-darkslate/60">We'll prepare a customized demo based on your requirements</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-handshake text-accent w-5"></i>
+                <span class="text-darkslate/60">Sarah will walk you through how Supplier Portal fits your workflow</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add to Calendar -->
+          <div class="text-center mb-8">
+            <button id="add-to-calendar" class="bg-accent text-white px-8 py-3 rounded-md hover:bg-accent/90 transition-colors font-medium">
+              <i class="fa-solid fa-calendar-plus mr-2"></i> Add to Calendar
+            </button>
+          </div>
+
+          <!-- Trust Signal -->
+          <div class="text-center text-darkslate/60 text-sm">
+            <i class="fa-solid fa-shield-halved text-accent mr-1"></i>
+            Your booking is secure. You can reschedule or cancel anytime.
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="bg-gray-50 border-t border-gray-100 py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="text-xl font-semibold text-darkslate mb-4">Supplier Portal</div>
+          <p class="text-darkslate/60">
+            Connect product, supplier, and budget decisions in one flow.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-darkslate mb-4">Product</h4>
+          <ul class="space-y-2 text-darkslate/60">
+            <li><a href="#" class="hover:text-accent">Features</a></li>
+            <li><a href="#" class="hover:text-accent">Integrations</a></li>
+            <li><a href="#" class="hover:text-accent">Security</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-darkslate mb-4">Resources</h4>
+          <ul class="space-y-2 text-darkslate/60">
+            <li><a href="#" class="hover:text-accent">Documentation</a></li>
+            <li><a href="#" class="hover:text-accent">Support</a></li>
+            <li><a href="#" class="hover:text-accent">Case Studies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-darkslate mb-4">Company</h4>
+          <ul class="space-y-2 text-darkslate/60">
+            <li><a href="./about.html" class="hover:text-accent">About</a></li>
+            <li><a href="#" class="hover:text-accent">Contact</a></li>
+            <li><a href="#" class="hover:text-accent">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-200 mt-8 pt-8 text-center text-darkslate/60">
+        <p>&copy; 2024 Supplier Portal. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
