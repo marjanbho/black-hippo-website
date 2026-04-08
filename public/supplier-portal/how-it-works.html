@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="./assets/main-w_aQhyyG.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/main-Dx3avjaj.css">
+  <script type="module" crossorigin src="./assets/main-Dobl0sQt.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-Nd3lHVpH.css">
 </head>
 <body class="bg-white text-darkslate antialiased selection:bg-accent/20 selection:text-darkslate">
 
@@ -119,60 +119,75 @@
                 </div>
                 <!-- Right Column -->
                 <div class="lg:col-span-7 bg-offwhite p-8 md:p-12 relative">
-                  <div class="bg-white rounded-xl shadow-card p-6 border border-gray-100">
-                    <div class="flex items-center justify-between mb-6">
-                      <h4 class="font-bold text-darkslate">Spring Collection 2028</h4>
-                      <span class="text-sm text-darkslate/60">62% complete</span>
-                    </div>
-                    <div class="w-full bg-gray-100 rounded-full h-2 mb-6">
-                      <div class="bg-accent h-2 rounded-full" style="width: 62%"></div>
-                    </div>
-
-                    <!-- Budget -->
-                    <div class="mb-6">
-                      <div class="flex items-center justify-between mb-2">
-                        <span class="text-sm font-medium text-darkslate">Budget</span>
-                        <span class="text-sm text-darkslate/60">Total: &euro;2.4M</span>
-                      </div>
-                      <div class="flex gap-2 text-sm">
-                        <div class="flex items-center gap-1.5">
-                          <div class="w-3 h-3 rounded-sm bg-accent"></div>
-                          <span class="text-darkslate/60">&euro;1.5M allocated</span>
-                        </div>
-                        <div class="flex items-center gap-1.5">
-                          <div class="w-3 h-3 rounded-sm bg-gray-200"></div>
-                          <span class="text-darkslate/60">&euro;0.9M remaining</span>
+                  <div class="bg-white rounded-xl shadow-card border border-gray-100 overflow-hidden">
+                    <!-- Header -->
+                    <div class="bg-white border-b border-gray-100 p-4">
+                      <div class="flex items-center justify-between">
+                        <h4 class="font-bold text-darkslate">Spring Collection 2028</h4>
+                        <div class="flex items-center gap-2">
+                          <span class="text-xs text-darkslate/60">Progress</span>
+                          <div class="w-16 h-2 bg-gray-100 rounded-full">
+                            <div class="bg-accent h-2 rounded-full" style="width: 62%"></div>
+                          </div>
+                          <span class="text-xs font-bold text-darkslate">62%</span>
                         </div>
                       </div>
                     </div>
 
-                    <!-- Categories -->
-                    <div class="space-y-4">
-                      <div>
-                        <div class="flex items-center justify-between mb-1.5">
-                          <span class="text-sm text-darkslate">Decoration</span>
-                          <span class="text-sm text-darkslate/60">45/60</span>
+                    <!-- Budget Overview -->
+                    <div class="p-4 bg-offwhite">
+                      <div class="grid grid-cols-3 gap-4">
+                        <div class="text-center">
+                          <div class="text-lg font-bold text-darkslate">&euro;2.4M</div>
+                          <div class="text-xs text-darkslate/60">Total Budget</div>
                         </div>
-                        <div class="w-full bg-gray-100 rounded-full h-1.5">
-                          <div class="bg-accent h-1.5 rounded-full" style="width: 75%"></div>
+                        <div class="text-center">
+                          <div class="text-lg font-bold text-accent">&euro;1.5M</div>
+                          <div class="text-xs text-darkslate/60">Allocated</div>
                         </div>
-                      </div>
-                      <div>
-                        <div class="flex items-center justify-between mb-1.5">
-                          <span class="text-sm text-darkslate">Furniture</span>
-                          <span class="text-sm text-darkslate/60">32/40</span>
-                        </div>
-                        <div class="w-full bg-gray-100 rounded-full h-1.5">
-                          <div class="bg-blue-400 h-1.5 rounded-full" style="width: 80%"></div>
+                        <div class="text-center">
+                          <div class="text-lg font-bold text-darkslate/60">&euro;0.9M</div>
+                          <div class="text-xs text-darkslate/60">Remaining</div>
                         </div>
                       </div>
-                      <div>
-                        <div class="flex items-center justify-between mb-1.5">
-                          <span class="text-sm text-darkslate">Lighting</span>
-                          <span class="text-sm text-darkslate/60">18/25</span>
+                    </div>
+
+                    <!-- Category Breakdown -->
+                    <div class="p-4 space-y-3">
+                      <div class="flex items-center justify-between p-3 bg-white rounded border border-gray-100">
+                        <div class="flex items-center gap-3">
+                          <div class="w-3 h-3 bg-accent rounded-full"></div>
+                          <span class="text-sm font-bold text-darkslate">Decoration</span>
                         </div>
-                        <div class="w-full bg-gray-100 rounded-full h-1.5">
-                          <div class="bg-green-400 h-1.5 rounded-full" style="width: 72%"></div>
+                        <div class="flex items-center gap-4">
+                          <span class="text-xs text-darkslate/60">45/60 articles</span>
+                          <div class="w-16 h-1.5 bg-gray-100 rounded-full">
+                            <div class="bg-accent h-1.5 rounded-full" style="width: 75%"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex items-center justify-between p-3 bg-white rounded border border-gray-100">
+                        <div class="flex items-center gap-3">
+                          <div class="w-3 h-3 bg-blue-400 rounded-full"></div>
+                          <span class="text-sm font-bold text-darkslate">Furniture</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                          <span class="text-xs text-darkslate/60">32/40 articles</span>
+                          <div class="w-16 h-1.5 bg-gray-100 rounded-full">
+                            <div class="bg-blue-400 h-1.5 rounded-full" style="width: 80%"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex items-center justify-between p-3 bg-white rounded border border-gray-100">
+                        <div class="flex items-center gap-3">
+                          <div class="w-3 h-3 bg-green-400 rounded-full"></div>
+                          <span class="text-sm font-bold text-darkslate">Lighting</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                          <span class="text-xs text-darkslate/60">18/25 articles</span>
+                          <div class="w-16 h-1.5 bg-gray-100 rounded-full">
+                            <div class="bg-green-400 h-1.5 rounded-full" style="width: 72%"></div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -227,101 +242,134 @@
                   <div class="bg-white rounded-xl shadow-card p-6 border border-gray-100">
                     <h4 class="font-bold text-darkslate mb-6">Supplier Performance Dashboard</h4>
 
-                    <!-- Supplier Card 1 -->
-                    <div class="border border-gray-100 rounded-lg p-4 mb-4">
-                      <div class="flex items-center justify-between mb-4">
-                        <div>
-                          <h5 class="font-bold text-darkslate">Nordic Design Co</h5>
-                          <div class="flex items-center gap-2 mt-1">
-                            <span class="text-xs text-darkslate/60">China</span>
-                            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-700">Top Performer</span>
+                    <!-- Supplier Card 1 - Nordic Design Co -->
+                    <div class="border border-gray-100 rounded-lg p-5 mb-4">
+                      <div class="flex items-center justify-between mb-6 pb-4 border-b border-gray-50">
+                        <div class="flex items-center gap-4">
+                          <div class="w-10 h-10 bg-green-50 rounded-full flex items-center justify-center border border-green-100">
+                            <i class="fa-solid fa-crown text-green-600"></i>
+                          </div>
+                          <div>
+                            <h5 class="font-bold text-darkslate">Nordic Design Co.</h5>
+                            <div class="text-xs text-darkslate/60 flex items-center mt-1">
+                              <span class="text-green-600 font-bold mr-2">Top Performer</span>
+                              <span>China</span>
+                            </div>
                           </div>
                         </div>
-                        <div class="text-right">
-                          <span class="text-2xl font-bold text-darkslate">92</span>
-                          <span class="text-sm text-darkslate/60">/100</span>
+                        <div class="flex items-center gap-3">
+                          <div class="text-right">
+                            <div class="text-xs text-darkslate/60 uppercase tracking-wider mb-1">Overall</div>
+                            <div class="text-2xl font-bold text-darkslate">92<span class="text-sm text-darkslate/60 font-normal">/100</span></div>
+                          </div>
+                          <div class="w-12 h-12 relative flex items-center justify-center">
+                            <svg viewBox="0 0 36 36" class="w-full h-full transform -rotate-90">
+                              <path stroke-width="3" stroke="#e5e7eb" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                              <path stroke-dasharray="92, 100" stroke-width="3" stroke-linecap="round" stroke="#22c55e" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            </svg>
+                          </div>
                         </div>
                       </div>
                       <div class="grid grid-cols-4 gap-4">
-                        <div class="text-center">
-                          <svg viewBox="0 0 36 36" class="w-12 h-12 mx-auto mb-1">
-                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#e5e7eb" stroke-width="3"/>
-                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#22c55e" stroke-width="3" stroke-dasharray="95, 100" stroke-linecap="round"/>
-                          </svg>
+                        <div class="flex flex-col items-center">
+                          <div class="w-12 h-12 relative flex items-center justify-center mb-2">
+                            <svg viewBox="0 0 36 36" class="w-full h-full transform -rotate-90">
+                              <path stroke-width="4" stroke="#e5e7eb" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                              <path stroke-dasharray="95, 100" stroke-width="4" stroke-linecap="round" stroke="#22c55e" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            </svg>
+                            <span class="absolute text-xs font-bold text-darkslate">95</span>
+                          </div>
                           <span class="text-xs text-darkslate/60">Reliability</span>
-                          <p class="text-sm font-bold text-darkslate">95</p>
                         </div>
-                        <div class="text-center">
-                          <svg viewBox="0 0 36 36" class="w-12 h-12 mx-auto mb-1">
-                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#e5e7eb" stroke-width="3"/>
-                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#22c55e" stroke-width="3" stroke-dasharray="98, 100" stroke-linecap="round"/>
-                          </svg>
+                        <div class="flex flex-col items-center">
+                          <div class="w-12 h-12 relative flex items-center justify-center mb-2">
+                            <svg viewBox="0 0 36 36" class="w-full h-full transform -rotate-90">
+                              <path stroke-width="4" stroke="#e5e7eb" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                              <path stroke-dasharray="98, 100" stroke-width="4" stroke-linecap="round" stroke="#22c55e" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            </svg>
+                            <span class="absolute text-xs font-bold text-darkslate">98</span>
+                          </div>
                           <span class="text-xs text-darkslate/60">Quality</span>
-                          <p class="text-sm font-bold text-darkslate">98</p>
                         </div>
-                        <div class="text-center">
-                          <svg viewBox="0 0 36 36" class="w-12 h-12 mx-auto mb-1">
-                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#e5e7eb" stroke-width="3"/>
-                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#22c55e" stroke-width="3" stroke-dasharray="85, 100" stroke-linecap="round"/>
-                          </svg>
-                          <span class="text-xs text-darkslate/60">Cost</span>
-                          <p class="text-sm font-bold text-darkslate">85</p>
+                        <div class="flex flex-col items-center">
+                          <div class="w-12 h-12 relative flex items-center justify-center mb-2">
+                            <svg viewBox="0 0 36 36" class="w-full h-full transform -rotate-90">
+                              <path stroke-width="4" stroke="#e5e7eb" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                              <path stroke-dasharray="85, 100" stroke-width="4" stroke-linecap="round" stroke="#22c55e" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            </svg>
+                            <span class="absolute text-xs font-bold text-darkslate">85</span>
+                          </div>
+                          <span class="text-xs text-darkslate/60 text-center leading-tight">Cost &amp;<br>Margin</span>
                         </div>
-                        <div class="text-center">
-                          <svg viewBox="0 0 36 36" class="w-12 h-12 mx-auto mb-1">
-                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#e5e7eb" stroke-width="3"/>
-                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#22c55e" stroke-width="3" stroke-dasharray="90, 100" stroke-linecap="round"/>
-                          </svg>
-                          <span class="text-xs text-darkslate/60">Compliance</span>
-                          <p class="text-sm font-bold text-darkslate">90</p>
+                        <div class="flex flex-col items-center">
+                          <div class="w-12 h-12 relative flex items-center justify-center mb-2">
+                            <svg viewBox="0 0 36 36" class="w-full h-full transform -rotate-90">
+                              <path stroke-width="4" stroke="#e5e7eb" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                              <path stroke-dasharray="90, 100" stroke-width="4" stroke-linecap="round" stroke="#22c55e" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            </svg>
+                            <span class="absolute text-xs font-bold text-darkslate">90</span>
+                          </div>
+                          <span class="text-xs text-darkslate/60 text-center leading-tight">Compliance<br>&amp; Risk</span>
                         </div>
                       </div>
                     </div>
 
-                    <!-- Supplier Card 2 -->
+                    <!-- Supplier Card 2 - Mediterranean Home -->
                     <div class="border border-gray-100 rounded-lg p-4">
-                      <div class="flex items-center justify-between mb-4">
-                        <div>
-                          <h5 class="font-bold text-darkslate">Mediterranean Home</h5>
-                          <span class="text-xs text-darkslate/60">Vietnam</span>
+                      <div class="flex items-center justify-between mb-4 pb-3 border-b border-gray-50">
+                        <div class="flex items-center gap-3">
+                          <div class="w-8 h-8 bg-offwhite rounded-full flex items-center justify-center border border-gray-200 text-darkslate/60 text-xs font-bold">2</div>
+                          <div>
+                            <h5 class="font-bold text-darkslate">Mediterranean Home</h5>
+                            <span class="text-xs text-darkslate/60">Vietnam</span>
+                          </div>
                         </div>
-                        <div class="text-right">
-                          <span class="text-2xl font-bold text-darkslate">68</span>
-                          <span class="text-sm text-darkslate/60">/100</span>
+                        <div class="flex items-center gap-2">
+                          <div class="text-xl font-bold text-darkslate">68</div>
+                          <div class="w-8 h-8 relative flex items-center justify-center">
+                            <svg viewBox="0 0 36 36" class="w-full h-full transform -rotate-90">
+                              <path stroke-width="3" stroke="#e5e7eb" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                              <path stroke-dasharray="68, 100" stroke-width="3" stroke-linecap="round" stroke="#eab308" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            </svg>
+                          </div>
                         </div>
                       </div>
-                      <div class="grid grid-cols-4 gap-4">
-                        <div class="text-center">
-                          <svg viewBox="0 0 36 36" class="w-12 h-12 mx-auto mb-1">
-                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#e5e7eb" stroke-width="3"/>
-                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#eab308" stroke-width="3" stroke-dasharray="78, 100" stroke-linecap="round"/>
-                          </svg>
-                          <span class="text-xs text-darkslate/60">Reliability</span>
-                          <p class="text-sm font-bold text-darkslate">78</p>
+                      <div class="grid grid-cols-4 gap-2">
+                        <div class="flex flex-col items-center">
+                          <div class="w-8 h-8 relative flex items-center justify-center mb-1">
+                            <svg viewBox="0 0 36 36" class="w-full h-full transform -rotate-90">
+                              <path stroke-width="4" stroke="#e5e7eb" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                              <path stroke-dasharray="78, 100" stroke-width="4" stroke-linecap="round" stroke="#22c55e" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            </svg>
+                            <span class="absolute text-[10px] font-bold text-darkslate">78</span>
+                          </div>
                         </div>
-                        <div class="text-center">
-                          <svg viewBox="0 0 36 36" class="w-12 h-12 mx-auto mb-1">
-                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#e5e7eb" stroke-width="3"/>
-                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#eab308" stroke-width="3" stroke-dasharray="65, 100" stroke-linecap="round"/>
-                          </svg>
-                          <span class="text-xs text-darkslate/60">Quality</span>
-                          <p class="text-sm font-bold text-darkslate">65</p>
+                        <div class="flex flex-col items-center">
+                          <div class="w-8 h-8 relative flex items-center justify-center mb-1">
+                            <svg viewBox="0 0 36 36" class="w-full h-full transform -rotate-90">
+                              <path stroke-width="4" stroke="#e5e7eb" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                              <path stroke-dasharray="65, 100" stroke-width="4" stroke-linecap="round" stroke="#eab308" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            </svg>
+                            <span class="absolute text-[10px] font-bold text-darkslate">65</span>
+                          </div>
                         </div>
-                        <div class="text-center">
-                          <svg viewBox="0 0 36 36" class="w-12 h-12 mx-auto mb-1">
-                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#e5e7eb" stroke-width="3"/>
-                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#eab308" stroke-width="3" stroke-dasharray="45, 100" stroke-linecap="round"/>
-                          </svg>
-                          <span class="text-xs text-darkslate/60">Cost</span>
-                          <p class="text-sm font-bold text-darkslate">45</p>
+                        <div class="flex flex-col items-center">
+                          <div class="w-8 h-8 relative flex items-center justify-center mb-1">
+                            <svg viewBox="0 0 36 36" class="w-full h-full transform -rotate-90">
+                              <path stroke-width="4" stroke="#e5e7eb" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                              <path stroke-dasharray="45, 100" stroke-width="4" stroke-linecap="round" stroke="#f97316" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            </svg>
+                            <span class="absolute text-[10px] font-bold text-darkslate">45</span>
+                          </div>
                         </div>
-                        <div class="text-center">
-                          <svg viewBox="0 0 36 36" class="w-12 h-12 mx-auto mb-1">
-                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#e5e7eb" stroke-width="3"/>
-                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#eab308" stroke-width="3" stroke-dasharray="82, 100" stroke-linecap="round"/>
-                          </svg>
-                          <span class="text-xs text-darkslate/60">Compliance</span>
-                          <p class="text-sm font-bold text-darkslate">82</p>
+                        <div class="flex flex-col items-center">
+                          <div class="w-8 h-8 relative flex items-center justify-center mb-1">
+                            <svg viewBox="0 0 36 36" class="w-full h-full transform -rotate-90">
+                              <path stroke-width="4" stroke="#e5e7eb" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                              <path stroke-dasharray="82, 100" stroke-width="4" stroke-linecap="round" stroke="#22c55e" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            </svg>
+                            <span class="absolute text-[10px] font-bold text-darkslate">82</span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -468,59 +516,89 @@
                   </ul>
                 </div>
                 <div class="lg:col-span-7 bg-offwhite p-8 md:p-12 relative">
-                  <div class="bg-white rounded-xl shadow-card p-6 border border-gray-100">
-                    <h4 class="font-bold text-darkslate mb-2">Pricing Calculator</h4>
-                    <p class="text-sm text-darkslate/60 mb-6">Modern Oak Table</p>
-
-                    <div class="grid md:grid-cols-2 gap-6">
-                      <!-- Left: Cost Breakdown -->
-                      <div>
-                        <h5 class="text-xs font-bold text-darkslate/60 uppercase tracking-wider mb-3">Base Costs</h5>
-                        <div class="space-y-2 mb-4">
-                          <div class="flex items-center justify-between text-sm">
-                            <span class="text-darkslate/60">Product</span>
-                            <span class="text-darkslate font-medium">&euro;85.00</span>
-                          </div>
-                          <div class="flex items-center justify-between text-sm">
-                            <span class="text-darkslate/60">Shipping</span>
-                            <span class="text-darkslate font-medium">&euro;12.50</span>
-                          </div>
-                          <div class="flex items-center justify-between text-sm">
-                            <span class="text-darkslate/60">Import Duties</span>
-                            <span class="text-darkslate font-medium">&euro;8.20</span>
-                          </div>
-                        </div>
-                        <h5 class="text-xs font-bold text-darkslate/60 uppercase tracking-wider mb-3">Additional</h5>
-                        <div class="space-y-2">
-                          <div class="flex items-center justify-between text-sm">
-                            <span class="text-darkslate/60">Quality Control</span>
-                            <span class="text-darkslate font-medium">&euro;3.50</span>
-                          </div>
-                          <div class="flex items-center justify-between text-sm">
-                            <span class="text-darkslate/60">Handling</span>
-                            <span class="text-darkslate font-medium">&euro;2.80</span>
-                          </div>
-                        </div>
+                  <div class="bg-white rounded-xl shadow-card border border-gray-100 overflow-hidden">
+                    <div class="bg-white border-b border-gray-100 p-4">
+                      <div class="flex items-center justify-between">
+                        <h4 class="font-bold text-darkslate">Pricing Calculator</h4>
+                        <span class="text-sm text-darkslate/60">Modern Oak Table</span>
                       </div>
+                    </div>
 
-                      <!-- Right: Summary -->
-                      <div class="bg-offwhite rounded-lg p-4">
+                    <div class="p-6">
+                      <div class="grid md:grid-cols-2 gap-6">
+                        <!-- Left: Cost Breakdown -->
                         <div class="space-y-4">
                           <div>
-                            <p class="text-xs text-darkslate/60 mb-1">Landed Cost</p>
-                            <p class="text-xl font-bold text-darkslate">&euro;112.00</p>
+                            <h5 class="text-xs font-bold text-darkslate/60 uppercase tracking-wider mb-2">Base Costs</h5>
+                            <div class="space-y-3">
+                              <div class="flex items-center justify-between p-3 bg-offwhite rounded-lg">
+                                <span class="text-sm text-darkslate">Product Cost</span>
+                                <span class="text-sm font-bold text-darkslate">&euro;85.00</span>
+                              </div>
+                              <div class="flex items-center justify-between p-3 bg-offwhite rounded-lg">
+                                <span class="text-sm text-darkslate">Shipping</span>
+                                <span class="text-sm font-bold text-darkslate">&euro;12.50</span>
+                              </div>
+                              <div class="flex items-center justify-between p-3 bg-offwhite rounded-lg">
+                                <span class="text-sm text-darkslate">Import Duties</span>
+                                <span class="text-sm font-bold text-darkslate">&euro;8.20</span>
+                              </div>
+                            </div>
                           </div>
                           <div>
-                            <p class="text-xs text-darkslate/60 mb-1">Target Margin</p>
-                            <p class="text-xl font-bold text-darkslate">42%</p>
+                            <h5 class="text-xs font-bold text-darkslate/60 uppercase tracking-wider mb-2">Additional Costs</h5>
+                            <div class="space-y-3">
+                              <div class="flex items-center justify-between p-3 bg-offwhite rounded-lg">
+                                <span class="text-sm text-darkslate">Quality Control</span>
+                                <span class="text-sm font-bold text-darkslate">&euro;3.50</span>
+                              </div>
+                              <div class="flex items-center justify-between p-3 bg-offwhite rounded-lg">
+                                <span class="text-sm text-darkslate">Handling</span>
+                                <span class="text-sm font-bold text-darkslate">&euro;2.80</span>
+                              </div>
+                            </div>
                           </div>
-                          <div class="border-t border-gray-200 pt-4">
-                            <p class="text-xs text-darkslate/60 mb-1">Selling Price</p>
-                            <p class="text-2xl font-bold text-accent">&euro;193.00</p>
+                        </div>
+
+                        <!-- Right: Pricing Strategy -->
+                        <div class="space-y-4">
+                          <div>
+                            <h5 class="text-xs font-bold text-darkslate/60 uppercase tracking-wider mb-2">Pricing Strategy</h5>
+                            <div class="space-y-3">
+                              <div class="p-3 bg-accent/5 border border-accent/20 rounded-lg">
+                                <div class="flex items-center justify-between mb-2">
+                                  <span class="text-sm font-bold text-darkslate">Landed Cost</span>
+                                  <span class="text-lg font-bold text-darkslate">&euro;112.00</span>
+                                </div>
+                                <div class="text-xs text-darkslate/60">All costs included</div>
+                              </div>
+                              <div class="p-3 bg-white border border-gray-100 rounded-lg">
+                                <div class="flex items-center justify-between mb-2">
+                                  <span class="text-sm text-darkslate">Target Margin</span>
+                                  <span class="text-sm font-bold text-darkslate">42%</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                  <span class="text-sm text-darkslate">Selling Price</span>
+                                  <span class="text-lg font-bold text-accent">&euro;193.00</span>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                           <div>
-                            <p class="text-xs text-darkslate/60 mb-1">Profit Margin</p>
-                            <p class="text-xl font-bold text-green-600">&euro;81.00</p>
+                            <h5 class="text-xs font-bold text-darkslate/60 uppercase tracking-wider mb-2">Margin Analysis</h5>
+                            <div class="bg-white border border-gray-100 rounded-lg p-3">
+                              <div class="flex items-center justify-between mb-3">
+                                <span class="text-sm font-bold text-darkslate">Profit Margin</span>
+                                <span class="text-xl font-bold text-green-600">&euro;81.00</span>
+                              </div>
+                              <div class="w-full bg-gray-100 rounded-full h-2">
+                                <div class="bg-green-500 h-2 rounded-full" style="width: 42%"></div>
+                              </div>
+                              <div class="flex justify-between mt-2 text-xs text-darkslate/60">
+                                <span>Cost: &euro;112</span>
+                                <span>42% margin</span>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -597,43 +675,63 @@
 
                     <!-- Compliance Rows -->
                     <div class="space-y-3">
-                      <div class="flex items-center justify-between p-3 bg-green-50/50 rounded-lg">
+                      <div class="flex items-center justify-between p-3 bg-white rounded border border-gray-100">
                         <div class="flex items-center gap-3">
-                          <div class="w-2 h-2 rounded-full bg-green-500"></div>
-                          <span class="text-sm text-darkslate">CE Certification</span>
+                          <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                          <div>
+                            <span class="text-sm font-bold text-darkslate">CE Certification</span>
+                            <div class="text-xs text-darkslate/60">135 products</div>
+                          </div>
                         </div>
-                        <div class="flex items-center gap-3">
-                          <span class="text-xs text-darkslate/60">135 products</span>
+                        <div class="flex items-center gap-2">
+                          <div class="w-16 h-1.5 bg-gray-100 rounded-full">
+                            <div class="w-full h-1.5 bg-green-500 rounded-full"></div>
+                          </div>
                           <span class="text-xs font-bold text-green-600">100%</span>
                         </div>
                       </div>
-                      <div class="flex items-center justify-between p-3 bg-green-50/50 rounded-lg">
+                      <div class="flex items-center justify-between p-3 bg-white rounded border border-gray-100">
                         <div class="flex items-center gap-3">
-                          <div class="w-2 h-2 rounded-full bg-green-500"></div>
-                          <span class="text-sm text-darkslate">Product Safety</span>
+                          <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                          <div>
+                            <span class="text-sm font-bold text-darkslate">Product Safety</span>
+                            <div class="text-xs text-darkslate/60">128 products</div>
+                          </div>
                         </div>
-                        <div class="flex items-center gap-3">
-                          <span class="text-xs text-darkslate/60">128 products</span>
+                        <div class="flex items-center gap-2">
+                          <div class="w-16 h-1.5 bg-gray-100 rounded-full">
+                            <div class="h-1.5 bg-green-500 rounded-full" style="width: 95%"></div>
+                          </div>
                           <span class="text-xs font-bold text-green-600">95%</span>
                         </div>
                       </div>
-                      <div class="flex items-center justify-between p-3 bg-orange-50/50 rounded-lg">
+                      <div class="flex items-center justify-between p-3 bg-orange-50 rounded border border-orange-200">
                         <div class="flex items-center gap-3">
-                          <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-                          <span class="text-sm text-darkslate">REACH Compliance</span>
+                          <div class="w-3 h-3 rounded-full bg-orange-500"></div>
+                          <div>
+                            <span class="text-sm font-bold text-darkslate">REACH Compliance</span>
+                            <div class="text-xs text-darkslate/60">8 pending reviews</div>
+                          </div>
                         </div>
-                        <div class="flex items-center gap-3">
-                          <span class="text-xs text-darkslate/60">8 pending</span>
+                        <div class="flex items-center gap-2">
+                          <div class="w-16 h-1.5 bg-gray-100 rounded-full">
+                            <div class="h-1.5 bg-orange-500 rounded-full" style="width: 88%"></div>
+                          </div>
                           <span class="text-xs font-bold text-orange-500">88%</span>
                         </div>
                       </div>
-                      <div class="flex items-center justify-between p-3 bg-red-50/50 rounded-lg">
+                      <div class="flex items-center justify-between p-3 bg-red-50 rounded border border-red-200">
                         <div class="flex items-center gap-3">
-                          <div class="w-2 h-2 rounded-full bg-red-500"></div>
-                          <span class="text-sm text-darkslate">Material Documentation</span>
+                          <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                          <div>
+                            <span class="text-sm font-bold text-darkslate">Material Documentation</span>
+                            <div class="text-xs text-darkslate/60">3 missing documents</div>
+                          </div>
                         </div>
-                        <div class="flex items-center gap-3">
-                          <span class="text-xs text-darkslate/60">3 missing</span>
+                        <div class="flex items-center gap-2">
+                          <div class="w-16 h-1.5 bg-gray-100 rounded-full">
+                            <div class="h-1.5 bg-red-500 rounded-full" style="width: 78%"></div>
+                          </div>
                           <span class="text-xs font-bold text-red-500">78%</span>
                         </div>
                       </div>
@@ -801,67 +899,126 @@
           <p class="text-lg text-darkslate/60 max-w-2xl mx-auto">Reduce manual data entry and classification work. AI extracts, validates, and enriches product information automatically.</p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8 mb-12">
-          <!-- AI Feature 1 -->
-          <div class="bg-offwhite rounded-xl p-8">
-            <h3 class="text-xl font-bold text-darkslate mb-4">Automatic data extraction from documents</h3>
-            <div class="bg-white rounded-xl shadow-card p-6 border border-gray-100">
-              <div class="flex items-center gap-3 mb-4">
-                <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center">
-                  <i class="fa-solid fa-file-lines text-accent"></i>
+        <!-- AI Feature 1: Document Extraction -->
+        <div class="grid lg:grid-cols-2 gap-16 items-center mb-20">
+          <div class="order-2 lg:order-1">
+            <div class="bg-offwhite rounded-2xl p-8 border border-gray-100">
+              <div class="bg-white rounded-xl shadow-card p-6 mb-4">
+                <div class="flex items-center justify-between mb-4">
+                  <span class="text-sm font-bold text-darkslate/60">Document uploaded</span>
+                  <i class="fa-solid fa-file-pdf text-orange-500 text-xl"></i>
                 </div>
-                <div>
-                  <p class="text-sm font-bold text-darkslate">Supplier_NDA_2024.pdf</p>
-                  <p class="text-xs text-darkslate/60">Uploaded just now</p>
+                <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
+                  <div class="h-full bg-accent rounded-full w-full"></div>
                 </div>
               </div>
-              <div class="border-t border-gray-100 pt-4">
-                <div class="flex items-center gap-2 mb-3">
+              <div class="space-y-3">
+                <div class="bg-white rounded-lg p-4 border border-gray-100 flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                      <i class="fa-solid fa-check text-green-600 text-sm"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm font-bold text-darkslate">Document type identified</p>
+                      <p class="text-xs text-darkslate/60">Non-Disclosure Agreement</p>
+                    </div>
+                  </div>
                   <i class="fa-solid fa-wand-magic-sparkles text-accent text-sm"></i>
-                  <span class="text-xs font-medium text-accent">AI Extracted Fields</span>
                 </div>
-                <div class="space-y-2">
-                  <div class="flex items-center justify-between text-sm">
-                    <span class="text-darkslate/60">Document type</span>
-                    <span class="font-medium text-darkslate bg-accent/10 px-2 py-0.5 rounded">NDA</span>
+                <div class="bg-white rounded-lg p-4 border border-gray-100 flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                      <i class="fa-solid fa-check text-green-600 text-sm"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm font-bold text-darkslate">Supplier extracted</p>
+                      <p class="text-xs text-darkslate/60">Nordic Design Co., China</p>
+                    </div>
                   </div>
-                  <div class="flex items-center justify-between text-sm">
-                    <span class="text-darkslate/60">Supplier</span>
-                    <span class="font-medium text-darkslate">Nordic Design Co</span>
+                  <i class="fa-solid fa-wand-magic-sparkles text-accent text-sm"></i>
+                </div>
+                <div class="bg-white rounded-lg p-4 border border-gray-100 flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                      <i class="fa-solid fa-check text-green-600 text-sm"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm font-bold text-darkslate">Signing date</p>
+                      <p class="text-xs text-darkslate/60">15 January 2024</p>
+                    </div>
                   </div>
-                  <div class="flex items-center justify-between text-sm">
-                    <span class="text-darkslate/60">Signing date</span>
-                    <span class="font-medium text-darkslate">15 Jan 2024</span>
+                  <i class="fa-solid fa-wand-magic-sparkles text-accent text-sm"></i>
+                </div>
+                <div class="bg-white rounded-lg p-4 border border-gray-100 flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                      <i class="fa-solid fa-check text-green-600 text-sm"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm font-bold text-darkslate">Valid until</p>
+                      <p class="text-xs text-darkslate/60">15 January 2027</p>
+                    </div>
                   </div>
-                  <div class="flex items-center justify-between text-sm">
-                    <span class="text-darkslate/60">Valid until</span>
-                    <span class="font-medium text-darkslate">15 Jan 2027</span>
-                  </div>
+                  <i class="fa-solid fa-wand-magic-sparkles text-accent text-sm"></i>
                 </div>
               </div>
             </div>
           </div>
+          <div class="order-1 lg:order-2">
+            <h3 class="text-3xl font-bold text-darkslate mb-6">Automatic data extraction from documents</h3>
+            <p class="text-lg text-darkslate/60 mb-8">Upload supplier documents, technical sheets, or compliance certificates. AI extracts key information automatically -- no manual data entry required.</p>
+          </div>
+        </div>
 
-          <!-- AI Feature 2 -->
-          <div class="bg-offwhite rounded-xl p-8">
-            <h3 class="text-xl font-bold text-darkslate mb-4">Intelligent product classification and enrichment</h3>
-            <div class="bg-white rounded-xl shadow-card p-6 border border-gray-100">
-              <div class="flex items-center gap-2 mb-4">
-                <i class="fa-solid fa-wand-magic-sparkles text-accent text-sm"></i>
-                <span class="text-xs font-medium text-accent">AI Suggestions</span>
-              </div>
-              <div class="space-y-3">
-                <div class="border border-accent/20 rounded-lg p-3 bg-accent/5">
-                  <p class="text-xs text-darkslate/60 mb-1">Category</p>
-                  <p class="text-sm font-medium text-darkslate">Furniture &gt; Tables &gt; Coffee Tables</p>
+        <!-- AI Feature 2: Classification -->
+        <div class="grid lg:grid-cols-2 gap-16 items-center mb-12">
+          <div>
+            <h3 class="text-3xl font-bold text-darkslate mb-6">Intelligent product classification and enrichment</h3>
+            <p class="text-lg text-darkslate/60 mb-8">AI analyzes product descriptions and images to suggest categories, assign HS code, and enrich missing attributes, maintaining consistency across your entire catalog.</p>
+          </div>
+          <div>
+            <div class="bg-offwhite rounded-2xl p-8 border border-gray-100">
+              <div class="bg-white rounded-xl shadow-card p-6">
+                <div class="flex items-center gap-4 mb-6">
+                  <div class="w-20 h-20 rounded-lg overflow-hidden bg-offwhite border border-gray-100 flex-shrink-0">
+                    <img src="./images/oak-table.png" alt="Modern Oak Coffee Table" class="w-full h-full object-cover">
+                  </div>
+                  <div class="flex-1">
+                    <p class="text-sm font-bold text-darkslate mb-1">Modern Oak Coffee Table</p>
+                    <p class="text-xs text-darkslate/60">Ref: CT-2024-089</p>
+                  </div>
                 </div>
-                <div class="border border-accent/20 rounded-lg p-3 bg-accent/5">
-                  <p class="text-xs text-darkslate/60 mb-1">Color</p>
-                  <p class="text-sm font-medium text-darkslate">Natural</p>
-                </div>
-                <div class="border border-accent/20 rounded-lg p-3 bg-accent/5">
-                  <p class="text-xs text-darkslate/60 mb-1">HS Code</p>
-                  <p class="text-sm font-medium text-darkslate">9403.60.90.00</p>
+                <div>
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold text-darkslate/60 flex items-center gap-2">
+                      <i class="fa-solid fa-wand-magic-sparkles text-accent text-sm"></i>
+                      AI Suggestions
+                    </span>
+                    <span class="text-xs text-accent">3 applied</span>
+                  </div>
+                  <div class="space-y-2">
+                    <div class="bg-accent/5 rounded-lg p-3 border border-accent/20">
+                      <div class="flex items-center justify-between mb-1">
+                        <span class="text-xs font-bold text-darkslate">Category</span>
+                        <i class="fa-solid fa-check text-accent text-xs"></i>
+                      </div>
+                      <p class="text-sm text-darkslate">Furniture &gt; Tables &gt; Coffee Tables</p>
+                    </div>
+                    <div class="bg-accent/5 rounded-lg p-3 border border-accent/20">
+                      <div class="flex items-center justify-between mb-1">
+                        <span class="text-xs font-bold text-darkslate">Color</span>
+                        <i class="fa-solid fa-check text-accent text-xs"></i>
+                      </div>
+                      <p class="text-sm text-darkslate">Natural</p>
+                    </div>
+                    <div class="bg-accent/5 rounded-lg p-3 border border-accent/20">
+                      <div class="flex items-center justify-between mb-1">
+                        <span class="text-xs font-bold text-darkslate">HS Code</span>
+                        <i class="fa-solid fa-check text-accent text-xs"></i>
+                      </div>
+                      <p class="text-sm text-darkslate">9403.60.90.00</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -898,21 +1055,21 @@
               <i class="fa-solid fa-database text-accent text-xl"></i>
             </div>
             <h3 class="text-lg font-bold text-darkslate mb-2">ERP</h3>
-            <p class="text-darkslate/60 text-sm">Sync product and order data with your existing ERP system for a single source of truth.</p>
+            <p class="text-darkslate/60 text-sm">Seamless two-way sync with SAP, Microsoft Dynamics, NetSuite, Odoo and other enterprise systems.</p>
           </div>
           <div class="bg-white rounded-xl shadow-card p-8 border border-gray-100 text-center">
             <div class="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center mx-auto mb-5">
               <i class="fa-solid fa-box text-accent text-xl"></i>
             </div>
             <h3 class="text-lg font-bold text-darkslate mb-2">PIM</h3>
-            <p class="text-darkslate/60 text-sm">Push enriched product data directly to your Product Information Management system.</p>
+            <p class="text-darkslate/60 text-sm">Connect with Akeneo, Pimcore, Plytix, and other product information management systems.</p>
           </div>
           <div class="bg-white rounded-xl shadow-card p-8 border border-gray-100 text-center">
             <div class="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center mx-auto mb-5">
               <i class="fa-solid fa-code text-accent text-xl"></i>
             </div>
             <h3 class="text-lg font-bold text-darkslate mb-2">Files & APIs</h3>
-            <p class="text-darkslate/60 text-sm">Import and export via files or connect through RESTful APIs for custom integrations.</p>
+            <p class="text-darkslate/60 text-sm">Flexible integration via REST APIs, CSV/Excel imports, and standard file formats.</p>
           </div>
         </div>
       </div>
@@ -922,7 +1079,7 @@
     <section class="py-24">
       <div class="max-w-4xl mx-auto px-6 text-center">
         <h2 class="text-3xl md:text-4xl font-bold text-darkslate mb-6">Bring clarity to every assortment decision.</h2>
-        <p class="text-lg text-darkslate/60 mb-8 max-w-2xl mx-auto">See how the Supplier Portal can streamline your product sourcing and assortment workflow.</p>
+        <p class="text-lg text-darkslate/60 mb-8 max-w-2xl mx-auto">See how Supplier Portal fits into your workflow - from idea to sellable product.</p>
         <a href="./request-demo.html" class="inline-flex items-center gap-2 bg-accent text-white px-8 py-3 rounded-md hover:bg-accent/90 transition-colors font-medium">
           Request a Demo
           <i class="fa-solid fa-arrow-right text-sm"></i>
