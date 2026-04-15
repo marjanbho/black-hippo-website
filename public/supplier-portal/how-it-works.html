@@ -9,6 +9,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script type="module" crossorigin src="./assets/main-Dobl0sQt.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/main-Nd3lHVpH.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K287ZC60VG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-K287ZC60VG');
+  </script>
 </head>
 <body class="bg-white text-darkslate antialiased selection:bg-accent/20 selection:text-darkslate">
 
@@ -1127,6 +1135,26 @@
       </div>
     </div>
   </footer>
+
+  <!-- GA4 tab click tracking -->
+  <script>
+    var tabLabels = {
+      'step-1': 'Planning',
+      'step-2': 'Sourcing',
+      'step-3': 'Development',
+      'step-4': 'Pricing',
+      'step-5': 'Compliance',
+      'step-6': 'Insights'
+    };
+    document.querySelectorAll('.nav-item[data-target]').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var target = btn.getAttribute('data-target');
+        gtag('event', 'tab_click', {
+          tab_name: tabLabels[target]
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>

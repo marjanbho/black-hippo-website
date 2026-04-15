@@ -9,6 +9,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script type="module" crossorigin src="./assets/main-Dobl0sQt.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/main-Nd3lHVpH.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K287ZC60VG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-K287ZC60VG');
+  </script>
 </head>
 <body class="bg-white text-darkslate antialiased selection:bg-accent/20 selection:text-darkslate">
 
@@ -822,6 +830,51 @@
       </div>
     </div>
   </footer>
+
+  <!-- GA4 CTA & step click tracking -->
+  <script>
+    var stepLabels = {
+      '1': 'Plan your assortment',
+      '2': 'Choose suppliers',
+      '3': 'Review products',
+      '4': 'Ensure compliance',
+      '5': 'Validate profitability',
+      '6': 'Learn from performance'
+    };
+    document.querySelectorAll('[data-step]').forEach(function(el) {
+      el.addEventListener('click', function() {
+        var step = el.getAttribute('data-step');
+        gtag('event', 'step_click', {
+          step_number: step,
+          step_label: stepLabels[step]
+        });
+      });
+    });
+
+    // Request Demo CTA clicks — track location on page
+    var ctaLinks = document.querySelectorAll('a[href="./request-demo.html"]');
+    var ctaLocations = ['header', 'hero', 'mid_page', 'footer_cta'];
+    ctaLinks.forEach(function(link, index) {
+      link.addEventListener('click', function() {
+        gtag('event', 'cta_click', {
+          cta_label: 'Request Demo',
+          cta_location: ctaLocations[index] || 'other'
+        });
+      });
+    });
+
+    // "Explore the product" secondary button clicks
+    document.querySelectorAll('button').forEach(function(btn) {
+      if (btn.textContent.trim().startsWith('Explore the product')) {
+        btn.addEventListener('click', function() {
+          gtag('event', 'cta_click', {
+            cta_label: 'Explore the product',
+            cta_location: btn.closest('section') ? btn.closest('section').id || 'unknown' : 'unknown'
+          });
+        });
+      }
+    });
+  </script>
 
 </body>
 </html>
