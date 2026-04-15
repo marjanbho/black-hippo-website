@@ -9,22 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script type="module" crossorigin src="./assets/main-Dobl0sQt.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/main-Nd3lHVpH.css">
-  <!-- Microsoft Clarity -->
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "wc2tpvvf6g");
-  </script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K287ZC60VG"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-K287ZC60VG');
-  </script>
+  <script defer data-domain="blackhippo.be" src="https://plausible.io/js/script.js"></script>
 </head>
 <body class="bg-white text-darkslate antialiased selection:bg-accent/20 selection:text-darkslate">
 
@@ -100,10 +85,10 @@
               <a href="./request-demo.html" class="bg-accent text-white px-8 py-3.5 rounded-lg hover:bg-accent/90 transition-all font-medium shadow-sm text-base inline-block">
                 Request your tailored demo
               </a>
-              <button class="group flex items-center gap-2 text-darkslate/70 px-6 py-3.5 rounded-lg hover:text-accent transition-all font-medium border border-gray-200 hover:border-accent/30 bg-white">
+              <a href="./how-it-works.html" class="group flex items-center gap-2 text-darkslate/70 px-6 py-3.5 rounded-lg hover:text-accent transition-all font-medium border border-gray-200 hover:border-accent/30 bg-white">
                 Explore the product
                 <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
-              </button>
+              </a>
             </div>
           </div>
           <div class="relative">
@@ -257,14 +242,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Connector -->
-          <div class="flex items-center justify-center mb-12">
-            <div class="w-16 h-0.5 bg-red-200"></div>
-            <div class="mx-4 w-3 h-3 bg-red-300 rounded-full"></div>
-            <div class="w-16 h-0.5 bg-red-200"></div>
-          </div>
-
           <div class="text-center mb-24 max-w-3xl mx-auto flex items-center flex-col gap-2">
             <p class="text-lg text-darkslate/60 font-light">All of this information exists but it is scattered everywhere.</p>
             <p class="text-xl lg:text-2xl text-darkslate/80 font-medium leading-relaxed max-w-4xl mx-auto">
@@ -625,10 +602,10 @@
               <button class="bg-accent text-white px-8 py-4 rounded-lg hover:bg-accent/90 transition-all font-semibold shadow-md text-base">
                 Request a tailored demo
               </button>
-              <button class="group flex items-center gap-2 text-darkslate/70 px-8 py-4 rounded-lg hover:text-accent transition-all font-medium border-2 border-gray-200 hover:border-accent/30 bg-white">
+              <a href="./how-it-works.html" class="group flex items-center gap-2 text-darkslate/70 px-8 py-4 rounded-lg hover:text-accent transition-all font-medium border-2 border-gray-200 hover:border-accent/30 bg-white">
                 Explore the product
                 <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -839,8 +816,96 @@
     </div>
   </footer>
 
-  <!-- GA4 CTA & step click tracking -->
+  <!-- Cookie Consent Banner -->
+  <div id="cookie-banner" style="display:none;position:fixed;top:0;left:0;right:0;z-index:9999;background:white;border-bottom:1px solid #e5e7eb;box-shadow:0 4px 6px -1px rgba(0,0,0,0.07);padding:1.25rem 1.5rem;">
+    <div style="max-width:72rem;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;">
+      <p style="font-size:0.875rem;color:#4b5563;margin:0;flex:1;min-width:200px;">
+        We use <strong style="color:#1e293b;">Microsoft Clarity</strong> to record sessions and generate heatmaps. This tool places cookies on your device. Do you consent?
+      </p>
+      <div style="display:flex;gap:0.75rem;flex-shrink:0;">
+        <button id="cookie-decline" style="padding:0.5rem 1.25rem;font-size:0.875rem;font-weight:500;color:#6b7280;border:1px solid #d1d5db;border-radius:0.375rem;background:white;cursor:pointer;">
+          Decline
+        </button>
+        <button id="cookie-accept" style="padding:0.5rem 1.25rem;font-size:0.875rem;font-weight:500;color:white;background:#61B0BC;border:none;border-radius:0.375rem;cursor:pointer;">
+          Accept
+        </button>
+      </div>
+    </div>
+  </div>
   <script>
+    (function() {
+      function loadTracking() {
+        (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "wc2tpvvf6g");
+      }
+
+      var consent = localStorage.getItem('cookie_consent');
+      if (consent === 'accepted') {
+        loadTracking();
+      } else if (consent === null) {
+        document.getElementById('cookie-banner').style.display = 'block';
+      }
+
+      document.getElementById('cookie-accept').addEventListener('click', function() {
+        localStorage.setItem('cookie_consent', 'accepted');
+        document.getElementById('cookie-banner').style.display = 'none';
+        loadTracking();
+      });
+
+      document.getElementById('cookie-decline').addEventListener('click', function() {
+        localStorage.setItem('cookie_consent', 'declined');
+        document.getElementById('cookie-banner').style.display = 'none';
+      });
+    })();
+  </script>
+
+  <!-- Step active state fix -->
+  <script>
+    // Let compiled JS register its mouseenter listeners first, then add container mouseleave
+    setTimeout(function() {
+      var steps = document.querySelectorAll('[data-step]');
+      if (!steps.length) return;
+
+      var activeStep = '1';
+
+      function restoreActive() {
+        steps.forEach(function(el) {
+          var num = el.querySelector('.step-number');
+          var title = el.querySelector('.step-title');
+          if (num) num.classList.remove('bg-accent', 'text-white', 'border-accent');
+          if (title) title.classList.remove('text-accent');
+        });
+        var active = document.querySelector('[data-step="' + activeStep + '"]');
+        if (active) {
+          var num = active.querySelector('.step-number');
+          var title = active.querySelector('.step-title');
+          if (num) num.classList.add('bg-accent', 'text-white', 'border-accent');
+          if (title) title.classList.add('text-accent');
+        }
+      }
+
+      // Track last hovered step
+      steps.forEach(function(el) {
+        el.addEventListener('mouseenter', function() {
+          activeStep = el.getAttribute('data-step');
+        });
+      });
+
+      // When mouse leaves the steps container, re-apply active state on last hovered step
+      var container = steps[0].parentElement;
+      container.addEventListener('mouseleave', function() {
+        restoreActive();
+      });
+    }, 200);
+  </script>
+
+  <!-- Plausible event tracking -->
+  <script>
+    window.plausible = window.plausible || function(){ (window.plausible.q = window.plausible.q || []).push(arguments) };
+
     var stepLabels = {
       '1': 'Plan your assortment',
       '2': 'Choose suppliers',
@@ -852,10 +917,7 @@
     document.querySelectorAll('[data-step]').forEach(function(el) {
       el.addEventListener('click', function() {
         var step = el.getAttribute('data-step');
-        gtag('event', 'step_click', {
-          step_number: step,
-          step_label: stepLabels[step]
-        });
+        plausible('step_click', {props: {step_number: step, step_label: stepLabels[step]}});
       });
     });
 
@@ -864,10 +926,7 @@
     var ctaLocations = ['header', 'hero', 'mid_page', 'footer_cta'];
     ctaLinks.forEach(function(link, index) {
       link.addEventListener('click', function() {
-        gtag('event', 'cta_click', {
-          cta_label: 'Request Demo',
-          cta_location: ctaLocations[index] || 'other'
-        });
+        plausible('cta_click', {props: {cta_label: 'Request Demo', cta_location: ctaLocations[index] || 'other'}});
       });
     });
 
@@ -875,10 +934,7 @@
     document.querySelectorAll('button').forEach(function(btn) {
       if (btn.textContent.trim().startsWith('Explore the product')) {
         btn.addEventListener('click', function() {
-          gtag('event', 'cta_click', {
-            cta_label: 'Explore the product',
-            cta_location: btn.closest('section') ? btn.closest('section').id || 'unknown' : 'unknown'
-          });
+          plausible('cta_click', {props: {cta_label: 'Explore the product'}});
         });
       }
     });

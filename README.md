@@ -6,13 +6,12 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| Pagina | URL |
+|---|---|
+| Main website | http://localhost:3000 |
+| Supplier Portal | http://localhost:3000/supplier-portal/index.html |
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
